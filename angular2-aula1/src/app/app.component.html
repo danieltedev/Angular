@@ -1,0 +1,11 @@
+<h1>
+  {{title}}
+</h1>
+<app-meu-primeiro-component></app-meu-primeiro-component>
+<app-meu-segundo></app-meu-segundo>
+<app-cursos></app-cursos>
+<app-cursos-lista></app-cursos-lista>
+<app-data-binding></app-data-binding>
+<app-life-cycle [valorInicial]="valorInicial" *ngIf="deletarConteudo != true"></app-life-cycle>
+<button (click)="valorInicial = 20">Mudar Valor</button>
+<button (click)="deletarConteudo = true">Deletar tag life cycle</button>
