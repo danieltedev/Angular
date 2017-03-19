@@ -1,0 +1,19 @@
+<h1>
+  <i class="fa fa-star"
+    [class.fa-star-o]="!meuFavorito"
+    [class.fa-star]="meuFavorito"
+    aria-hidden="true"
+    (click)="mudarValor()">    
+  </i>
+</h1>
+
+<h1>
+  <i class="fa"
+    [ngClass]="{
+      'fa-star-o':!meuFavorito,
+      'fa-star':meuFavorito
+    }"
+    aria-hidden="true"
+    (click)="mudarValor()">    
+  </i>
+</h1>
