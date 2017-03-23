@@ -1,0 +1,19 @@
+<!--div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Fluid jumbotron</h1>
+    <p class="lead">
+      <ng-content></ng-content>
+    </p>
+  </div>
+</div-->
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">
+      <ng-content select=".titulo"></ng-content>
+    </h1>
+    <p class="lead">
+      <ng-content select=".conteudo"></ng-content>
+    </p>
+  </div>
+</div>
