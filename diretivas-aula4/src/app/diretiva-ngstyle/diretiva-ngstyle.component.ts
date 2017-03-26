@@ -10,11 +10,11 @@ export class DiretivaNgstyleComponent implements OnInit {
   ativo: boolean;
   tamanhoFonte: number;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
     this.tamanhoFonte = 10;
   }
+
+  ngOnInit() { }
 
   mudarAtivo() {
     this.ativo = !this.ativo;

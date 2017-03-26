@@ -11,8 +11,6 @@ export class DiretivaNgswitchComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    this.aba = 'home';
-  }
+  ngOnInit() { }
 
 }

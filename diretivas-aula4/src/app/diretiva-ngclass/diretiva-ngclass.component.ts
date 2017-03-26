@@ -11,8 +11,7 @@ export class DiretivaNgclassComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   mudarValor() {
     this.meuFavorito = !this.meuFavorito;

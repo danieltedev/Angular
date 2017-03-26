@@ -18,12 +18,12 @@ export class HighlightDirective implements OnInit {
     this.backgroundColor = this.defaultColor;
   }
 
-  constructor() { }
-
-  ngOnInit() {
-    this.defaultColor = 'white';
+  constructor() {
+    this.defaultColor = 'white'; 
     this.appHighlight = 'yellow';
     this.backgroundColor = this.defaultColor;
   }
+
+  ngOnInit() { }
 
 }
