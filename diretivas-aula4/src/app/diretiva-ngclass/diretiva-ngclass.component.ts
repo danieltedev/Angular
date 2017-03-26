@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiretivaNgclassComponent implements OnInit {
 
-  meuFavorito: boolean = false;
+  meuFavorito: boolean;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  mudarValor(){
+  mudarValor() {
     this.meuFavorito = !this.meuFavorito;
   }
 
