@@ -19,7 +19,7 @@ export class HighlightDirective implements OnInit {
   }
 
   constructor() {
-    this.defaultColor = 'white'; 
+    this.defaultColor = 'white';
     this.appHighlight = 'yellow';
     this.backgroundColor = this.defaultColor;
   }

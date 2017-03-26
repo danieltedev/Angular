@@ -9,7 +9,7 @@ export class DiretivaNgforComponent implements OnInit {
 
   cursos: string[];
 
-  constructor() { 
+  constructor() {
     this.cursos = ['Angular 2', 'Java', 'PHP'];
   }
 
