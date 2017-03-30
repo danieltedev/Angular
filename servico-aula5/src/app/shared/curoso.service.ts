@@ -11,4 +11,8 @@ export class CurosoService {
     return this.cursos;
   }
 
+  addCurso (curso: string) {
+    this.cursos.push(curso);
+  }
+
 }
