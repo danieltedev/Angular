@@ -13,9 +13,9 @@ import { CurosoService } from '../shared/curoso.service';
   ],
   exports: [
     CursosComponent
-//  ],
-//  providers: [
-//    CurosoService
+  ],
+  providers: [
+    CurosoService
   ]
 })
 export class CursosModule { }
