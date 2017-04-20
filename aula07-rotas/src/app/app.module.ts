@@ -14,6 +14,7 @@ import { MaterializeModule } from 'angular2-materialize';
 // import { CursoNaoEncontradoComponent } from './curso/curso-nao-encontrado/curso-nao-encontrado.component';
 import { AppRoutingModule } from "./app.routing.module";
 import { CursoModule } from "app/curso/curso.module";
+import { AlunosModule } from "app/alunos/alunos.module";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CursoModule } from "app/curso/curso.module";
     FormsModule,
     HttpModule,
     CursoModule,
+    AlunosModule,
     AppRoutingModule
     // routing
   ],
