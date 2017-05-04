@@ -17,4 +17,13 @@ export class AlunosService {
     return this.alunos;
   }
 
+  getAlunoId(id: number) {
+    let alunos = this.getAlunos();
+    for(let aluno of alunos){
+      if(id == aluno.id){
+        return aluno;
+      }
+    }
+  }
+
 }

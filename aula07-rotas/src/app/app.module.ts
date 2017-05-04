@@ -13,8 +13,12 @@ import { MaterializeModule } from 'angular2-materialize';
 // import { CursoService } from "./curso/curso.service";
 // import { CursoNaoEncontradoComponent } from './curso/curso-nao-encontrado/curso-nao-encontrado.component';
 import { AppRoutingModule } from "./app.routing.module";
-import { CursoModule } from "app/curso/curso.module";
-import { AlunosModule } from "app/alunos/alunos.module";
+import { AuthService } from "app/login/auth.service";
+import { AuthGuard } from "app/guards/auth.guard";
+import { CursosGuard } from "app/guards/cursos.guard";
+import { AlunosGuard } from "app/guards/alunos.guard";
+// import { CursoModule } from "app/curso/curso.module";
+// import { AlunosModule } from "app/alunos/alunos.module";
 
 @NgModule({
   declarations: [
@@ -29,13 +33,17 @@ import { AlunosModule } from "app/alunos/alunos.module";
     BrowserModule,
     FormsModule,
     HttpModule,
-    CursoModule,
-    AlunosModule,
+    // CursoModule,
+    // AlunosModule,
     AppRoutingModule
     // routing
   ],
   providers: [
     // CursoService
+    AuthService,
+    AuthGuard,
+    CursosGuard// ,
+    // AlunosGuard
   ],
   bootstrap: [AppComponent]
 })

@@ -9,9 +9,9 @@ import { CursoNaoEncontradoComponent } from "./curso-nao-encontrado/curso-nao-en
 @NgModule({
     imports: [RouterModule.forChild(
         [
-            { path: 'curso', component: CursoComponent },
-            { path: 'curso-detalhe/:id', component: CursoDetalheComponent },
-            { path: 'naoEncontrado', component: CursoNaoEncontradoComponent }
+            { path: '', component: CursoComponent },
+            { path: 'naoEncontrado', component: CursoNaoEncontradoComponent },
+            { path: ':id', component: CursoDetalheComponent }
         ]
     )],
     exports: [RouterModule]
